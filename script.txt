@@ -1,0 +1,2 @@
+ant -Djava_home D:\Programs\sdkman\candidates\java\8.0.292-open\bin\java
+D:\Programs\sdkman\candidates\java\8.0.292-open\bin\java -jar build\jar\AJP.jar
