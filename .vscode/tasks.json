@@ -1,0 +1,40 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "shell": {
+            "executable": "cmd.exe",
+            "args": ["/d", "/c"]
+        },
+        "env": {
+            "JAVA_HOME": "D:\\Programs\\sdkman\\candidates\\java\\8.0.292-open"
+        }
+    },
+    "tasks": [
+        {
+            "label": "Build Java",
+            "type": "shell",
+            "command": "ant",
+            "args": [
+                "-Djava_home",
+                "D:\\Programs\\sdkman\\candidates\\java\\8.0.292-open\\bin\\java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run Java",
+            "type": "shell",
+            "command": "D:\\Programs\\sdkman\\candidates\\java\\8.0.292-open\\bin\\java",
+            "args": ["-jar", "build\\jar\\AJP.jar"]
+        },
+        {
+            "label": "Build And Run Java",
+            "dependsOrder": "sequence",
+            "dependsOn": ["Build Java", "Run Java"]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "editor.fontSize": 13,
+    "window.zoomLevel": -0.5,
+    "files.exclude": {
+        "**/.settings": false,
+        "**/*.class": false,
+    },
+    "java.project.sourcePaths": ["src"],
+    "java.completion.filteredTypes": [],
+    "java.format.comments.enabled": false,
+    "java.format.settings.url": "eclipse-formatter.xml",
+    "java.format.settings.profile": "AwesomeProfile",
+}

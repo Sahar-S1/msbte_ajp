@@ -1,6 +1,4 @@
 build.properties
 build
-.settings
-.vscode
 src/vp/ajp/experiments/**
 !src/vp/ajp/experiments/exp_*
